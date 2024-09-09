@@ -1,8 +1,13 @@
 pipeline{
 	agent any
 	tools{
+
+        maven 'akshatmaven'
+    }
+
 		maven "test-maven"
 	}
+
       stages{
            stage('Checkout'){
 	    
